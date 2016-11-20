@@ -1,0 +1,135 @@
+body{
+	background-color: #999;
+}
+#container{
+	width: 980px;
+	height: 1386px;
+	background-color: #fff;
+	margin:0 auto;
+	padding: 0 20px 0 20px;
+}
+#container div{
+	width: 892px;
+}
+#topContainer{
+	height: 61px;
+	width: 892px;
+	border: 2px solid #938e8c;
+	border-top:none ;
+	border-left: none;
+	border-right: none;
+	margin: 0 auto;
+}
+#topContainer #backC{
+	background-color: lightpink;
+	width: 110px;
+	height: 61px;
+	position: relative;
+	left: 0;
+	float: left;
+}
+#topContainer #backC p{
+	color: white;
+	font-size: 12px;
+	font-family: "黑体";
+	position: absolute;
+	/*top: 50px;*/
+	left: 0;
+	bottom: 0;
+	margin-bottom: 0;
+}
+#topContainer #null {
+	float: right;
+	/*background-color: black;*/
+	width: 110px;
+	height: 61px;
+	float: right;
+	position: relative;
+}
+#topContainer #null p{
+	color: #d45d5c;
+	font-size: 12px;
+	font-family: "黑体";
+	position: absolute;
+	/*top: 50px;*/
+	right: 0;
+	bottom: 0;
+	margin-bottom: 0;
+}
+
+#contentContainer_1{
+	margin:0 auto;
+	margin-top: 20px;
+}
+
+#contentContainer_1 #left #topImg{
+	width: 641px;
+	height: 301px;
+	/*position: absolute;*/
+}
+#contentContainer_1 #left #topImg img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#contentContainer_1 #left #topImg div{
+	width: 191px;
+	height: 301px;
+	position: absolute;
+	z-index: 5;
+}
+#contentContainer_1 #left #topImg #coverLeft{
+	background-color: rgba(126, 240, 147, 0.5);
+}
+#contentContainer_1 #left #topImg #coverRight{
+	/*right: 0;*/
+	margin-left: 450px;
+	background-color: rgba(209,60,60,0.5);
+}
+#contentContainer_1 #left #bottomText{
+	width: 641px;
+	margin-top: 20px;
+	font-family: "微软雅黑";
+}
+#contentContainer_1 #left #bottomText #leftText{
+    float: left;
+    width: 247px;
+    margin-right: 16px;
+}
+#contentContainer_1 #left #bottomText #leftText .title{
+	color:darkcyan
+}
+#contentContainer_1 #left #bottomText #centerText{
+    float: left;
+    width: 206px;
+    margin-right: 16px;
+}
+#contentContainer_1 #left #bottomText #centerText .title{
+	color:orange;
+}
+#contentContainer_1 #left #bottomText #rightText{
+    float: left;
+    width: 156px;
+}
+#contentContainer_1 #left #bottomText #rightText .title{
+	color:#8B0000;
+}
+#numPer span{
+	display: block;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+#numPer span a{
+	color: #cd4a48;
+	font-style: italic;
+}
+.title{
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.content{
+	font-size: 12px;
+}
