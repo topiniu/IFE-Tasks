@@ -1,5 +1,6 @@
 body{
 	background-color: #999;
+	font-family: "微软雅黑";
 }
 #container{
 	width: 980px;
@@ -61,7 +62,10 @@ body{
 	margin:0 auto;
 	margin-top: 20px;
 }
-
+#contentContainer_1 #left{
+	width: 641px;
+	float: left;
+}
 #contentContainer_1 #left #topImg{
 	width: 641px;
 	height: 301px;
@@ -132,4 +136,73 @@ body{
 }
 .content{
 	font-size: 12px;
+}
+
+
+
+#contentContainer_1 #right{
+	width: 203px;
+	height: 301px;
+	float: right;
+	border: 2px solid #cc8091;
+	border-bottom: none;
+	border-left:none ;
+	border-right: none;
+	overflow: hidden;
+}
+#contentContainer_1 #right #rTop #rtopTop{
+	text-decoration: underline;
+	font-size: 24px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+#contentContainer_1 #right #rTop #rtopBottom{
+	width: 203px;
+	margin-top: 0;
+	font-size: 12px;
+	color: #676767;
+	font-family: "楷体";
+	line-height: 10px;
+}
+#contentContainer_1 #right #rCenter{
+	width: 203px;
+	height: 134px;
+}
+#contentContainer_1 #right #rCenter p{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 116px;
+	color: #75b86b;
+}
+#contentContainer_1 #right #rBottom{
+	position: relative;
+	bottom: 0;
+	width: 203px;
+	height: 72px;
+}
+#contentContainer_1 #right #rBottom p{
+	margin-top: 0;
+}
+#contentContainer_1 #right #rBottom #rbLeft{
+	float: left;
+	font-size: 55px;
+	color: #cc8091;
+}
+#contentContainer_1 #right #rBottom #rbRight{
+    /* margin-top: -1px; */
+    width: 120px;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    margin-left: 78px;
+    bottom: 0;
+    margin-bottom: 11px;
+}
+#contentContainer_1 #right #rBottom #rbRight #rbrTop{
+	color: #cc8091;
+	font-size: 21px;
+}
+#contentContainer_1 #right #rBottom #rbRight #rbrBottom{
+	font-size: 12px;
+	color: #cc676767;
 }
