@@ -8,6 +8,7 @@
     left:50%;
     margin-left: -200px;
     margin-top: -100px;
+    overflow: hidden;
 }
 #container{
     float: left;
@@ -16,4 +17,22 @@
     position: absolute;
     width:70%;
     margin-bottom: -100px;
+}
+#c{
+    background-color: orangered;
+    width:100px;
+    height:100px;
+    position: relative;
+    top:-50px;
+    left:-50px;
+    border-radius: 100px;
+}
+#d{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 350px;
+    bottom: -50px;
+    border-radius: 100px;
 }
