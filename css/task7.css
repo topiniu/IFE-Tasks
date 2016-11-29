@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    padding:0 0;
+
+}
+#mainContainer{
+    width:100%;
+    height:1000px;
+    background-color: #72b16a;
+}
+#mainContainer .fatherContainer{
+    width:100%;
+    /*height:300px;*/
+    /*background-color: #8B0000;*/
+}
+#headBar{
+    background: #FFFFFF;
+    overflow: hidden;
+    width:30%;
+}
+#headBar #icon{
+    height:55px;
+    margin-left:30px;
+    float: left;
+    line-height:55px;
+}
+#headBar #icon img{
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-top: -20px;
+}
+#headBar #icon p{
+    margin:0;
+    font-size:21px;
+    font-family: 黑体;
+    margin-left:45px;
+    /*margin-top:5px;*/
+    /*line-height:40px;*/
+}
+#link{
+    float: right;
+    /*width:70%;*/
+    margin-right:40px;
+}
+#link ul{
+    list-style: none;
+    width:100%;
+}
+#link ul li{
+    /*width:70px;*/
+    float: left;
+    margin-right:30px;
+}
+#link ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size:14px;
+    font-family:微软雅黑;
+}
