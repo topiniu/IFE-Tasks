@@ -1,0 +1,37 @@
+
+#bigPanel{
+    position: relative;
+}
+#bigPanel img{
+    width:100%;
+    z-index: -1;
+}
+#bigPanel .container{
+    position: absolute;
+    top:20%;
+    left:10%;
+    color: #fff;
+    font-family:"微软雅黑 Light";
+    height:500px;
+}
+
+#bigPanel #textBox p:first-child{
+    font-size:60px;
+    margin-bottom:0;
+    font-weight: bold;
+}
+#bigPanel #textBox p:last-child{
+    font-size:21px;
+    width:320px;
+    margin-left:5px;
+}
+#bigPanel #btnBox button{
+    width:340px;
+    height:65px;
+    background-color: rgb(230,78,80);
+    font-size:30px;
+    border:none;
+    color: #FFFFFF;
+    font-family:"微软雅黑 Light";
+    margin-top:20%;
+}
