@@ -1,21 +1,24 @@
-#itemPanel{
-    height:320px;
-    display: inline-block;
+#itemPanel_1{
+    height:250px;
+    /*display: inline-block;*/
     padding-top:30px;
 }
-#itemPanel p{
+#itemPanel_1 p{
     font-size:14px;
     font-family:黑体;
     width:165px;
     margin:0 auto;
 }
-#itemPanel .container{
+#itemPanel_1 .container{
     text-align: center;
     width:25%;
     float: left;
+    position: relative;
+    top: 30%;
+    margin-top: -60px;
     /*margin-top:30px;*/
 }
-#itemPanel .container div{
+#itemPanel_1 .container div{
     text-align: center;
     border:1px solid black;
     border-left:none;
@@ -24,6 +27,6 @@
     margin-top:35px;
     height:50px;
 }
-#itemPanel .container:last-child div{
+#itemPanel_1 .container:last-child div{
     border-right: none;
 }

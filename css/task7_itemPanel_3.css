@@ -1,0 +1,58 @@
+#itemPanel_3{
+    height:340px;
+    position: relative;
+}
+#itemPanel_3 img{
+    position: absolute;
+    width:100%;
+    min-width:1280px;
+    height:340px;
+}
+#itemPanel_3 #cover{
+    position: relative;
+    background-color: rgba(59, 64, 66, 0.43);
+    width:100%;
+    height:340px;
+}
+#itemPanel_3 #cover .textContainer{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin-left: -168px;
+    text-align: center;
+    color: #fff;
+    font-family:微软雅黑;
+    margin-top:2%;
+}
+#itemPanel_3 #cover .textContainer hr{
+    width:35px;
+}
+#itemPanel_3 #cover p:first-child{
+    font-size:21px;
+}
+#itemPanel_3 #cover p:last-child{
+    font-size:12px;
+}
+#itemPanel_3 #cover .formContainer{
+    text-align: center;
+    margin-top:4%;
+}
+#itemPanel_3 #cover .formContainer select{
+    width:240px;
+    height:30px;
+    margin-right: 2%;
+    font-size:12px;
+}
+#itemPanel_3 #cover .formContainer select:hover,#itemPanel_3 #cover .formContainer select:focus{
+
+    border:1px solid rgb(189,78,74);
+}
+#itemPanel_3  .btn{
+    width:240px;
+    height:30px;
+    color: #FFFFFF;
+    background:rgb(189,78,74);
+    border:none;
+    font-size: 14px;
+    font-weight:bold;
+}
