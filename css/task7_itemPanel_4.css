@@ -1,0 +1,54 @@
+#itemPanel_4{
+    background-color: #ffffff;
+    height:410px;
+}
+#itemPanel_4 .container{
+    /*display: inline-block;*/
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+    width:970px;
+    padding-top:40px;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#itemPanel_4 .item_1{
+    margin-right: 30px;
+    width:220px;
+    height:390px;
+    float: left;;
+}
+#itemPanel_4 .item_1 div:first-child{
+    padding: 10px 5px;
+    border: 2px solid black;
+}
+#itemPanel_4 .item_1:last-child{
+    margin-right:0;
+}
+#itemPanel_4 .item_1 p:first-child{
+    font-size:16px;
+    font-family:微软雅黑;
+}
+#itemPanel_4 .item_1 p:last-child{
+    font-size:12px;
+    font-family:微软雅黑;
+    color: rgb(140,140,140);
+}
+#itemPanel_4 .item_1 div{
+    text-alian:center;
+}
+#itemPanel_4 #s div:last-child{
+    padding: 10px 5px;
+    border: 2px solid black;
+}
+#itemPanel_4 #s div:first-child{
+    border:none;
+    padding:0;
+}
+#itemPanel_4 #s div p:first-child{
+    font-size:24px;
+    font-family:微软雅黑;
+
+    margin:0;
+}
