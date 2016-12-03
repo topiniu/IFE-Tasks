@@ -1,0 +1,10 @@
+#itemPanel_5{
+    margin-top:10px;
+}
+#itemPanel_5 img{
+    width:100%;
+    
+}
+#itemPanel_5 .container_1,#itemPanel_5 .container_2{
+    position: relative;
+}
