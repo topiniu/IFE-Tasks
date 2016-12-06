@@ -1,0 +1,36 @@
+#itemPanel_6{
+    position: relative;
+    height:840px;
+}
+#itemPanel_6 p{
+    margin:0;
+}
+#itemPanel_6 img,#itemPanel_6 hr{
+    width:100%;
+}
+#itemPanel_6 .fatherContainer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:60%;
+    height:100%;
+    display: inline-block;
+}
+#itemPanel_6 .fatherContainer .leftContainer .textContainer,#itemPanel_6 .fatherContainer .rightContainer .textContainer{
+    height:130px;
+}
+#itemPanel_6 .fatherContainer .leftContainer,#itemPanel_6 .fatherContainer .rightContainer{
+    width:50%;
+
+    float: left;
+    font-size:21px;
+    height:100%;
+}
+#itemPanel_6 .fatherContainer .leftContainer{
+    background-color: #d45d5c;
+    color: #ffffff;
+}
+#itemPanel_6 .fatherContainer .rightContainer{
+    background-color: #FFFFFF;
+    color: #000;
+}
