@@ -1,6 +1,7 @@
 #itemPanel_5{
     margin-top:10px;
     position: relative;
+    overflow: hidden;
 }
 #itemPanel_5 img{
     width:100%;
