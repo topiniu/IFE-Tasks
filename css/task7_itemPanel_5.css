@@ -2,10 +2,11 @@
     margin-top:10px;
     position: relative;
     overflow: hidden;
-    height:840px;
+    max-height:840px;
 }
 #itemPanel_5 img{
     width:100%;
+    display: block;
     /*position: absolute;*/
 }
 #itemPanel_5 .container_1,#itemPanel_5 .container_2{
@@ -46,39 +47,16 @@
     height:100%;
     top:0;
     right:0;
-    padding-top:5%;
+    /*padding-top:5%;*/
 }
-#itemPanel_5 .container_2 .itemContainer_2 div{
-    max-height:300px;
+#itemPanel_5 .container_2 .image{
+    height:0;
+    width:0;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-right:30px solid #FFFFFF;
     position: relative;
-    top:20%;
-    /*margin-top:-172px;*/
-    padding:0 18%;
-    text-align: center;
-}
-#itemPanel_5 .container_2 .itemContainer_2 div:first-child p{
-    font-size:30px;
-    font-family:微软雅黑;
-    font-weight:bold;
-
-}
-#itemPanel_5 .container_2 .itemContainer_2 .middleText{
-    text-align: left;
-    font-size:12px;
-    color: rgb(186,186,186);
-    width:90%;
-    padding:0;
-    margin:0 auto;
-    overflow: hidden;
-}
-#itemPanel_5 .container_2 .itemContainer_2 div p:first-child a{
-    color: red;
-}
-#itemPanel_5 .container_2 .itemContainer_2 div:last-child button{
-    background-color: #FFFFFF;
-    border:1px solid red;
-    color: red;
-    width:110px;
-    height:35px;
-    margin-top:5%;
+    right:30px;
+    top:50%;
+    margin-top:-15px;
 }

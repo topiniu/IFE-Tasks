@@ -1,12 +1,16 @@
 #itemPanel_6{
     position: relative;
-    height:840px;
+    /*height:840px;*/
+}
+#itemPanel_6 img{
+    display: block;
 }
 #itemPanel_6 p{
-    margin:0;
+    margin:5px 0;
 }
 #itemPanel_6 img,#itemPanel_6 hr{
     width:100%;
+    border-color: #FFFFFF;
 }
 #itemPanel_6 .fatherContainer{
     position: absolute;
@@ -16,21 +20,59 @@
     height:100%;
     display: inline-block;
 }
+#itemPanel_6 .fatherContainer .leftContainer hr{
+    color: #FFFFFF;
+}
 #itemPanel_6 .fatherContainer .leftContainer .textContainer,#itemPanel_6 .fatherContainer .rightContainer .textContainer{
     height:130px;
+    position: relative;
+    top: 50%;
+    margin-top: -65px;
+    text-align: center;
+}
+#itemPanel_6 .fatherContainer .leftContainer .textContainer button,#itemPanel_6 .fatherContainer .rightContainer .textContainer button{
+    width:165px;
+    height:50px;
+    border:1px solid;
+    background-color: transparent;
+    margin-top:20px;
+    font-family:微软雅黑;
+    font-size:21px;
+}
+#itemPanel_6 .fatherContainer .rightContainer .textContainer button{
+    border-color: #000;
+    color: #000;
+}
+#itemPanel_6 .fatherContainer .leftContainer .textContainer button{
+    border-color: #FFFFFF;
+    color: #FFFFFF;
 }
 #itemPanel_6 .fatherContainer .leftContainer,#itemPanel_6 .fatherContainer .rightContainer{
     width:50%;
-
     float: left;
     font-size:21px;
     height:100%;
 }
 #itemPanel_6 .fatherContainer .leftContainer{
-    background-color: #d45d5c;
+    background-color: rgb(230,78,80);
     color: #ffffff;
 }
 #itemPanel_6 .fatherContainer .rightContainer{
     background-color: #FFFFFF;
     color: #000;
+}
+#itemPanel_6 .fatherContainer .rightContainer .textContainer .image{
+    height:0;
+    width:0;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:30px solid #FFFFFF;
+    position: relative;
+    left:100%;
+    top:50%;
+    margin-top:-15px;
+    /*margin-left:-15px;*/
+}
+#itemPanel_6 hr{
+    width:20px;
 }
