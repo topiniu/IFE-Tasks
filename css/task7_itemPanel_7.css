@@ -1,0 +1,110 @@
+#itemPanel_7{
+    width:100%;
+    overflow: hidden;
+}
+#itemPanel_7 .childContainer{
+    width:100%;
+    margin-top:50px;
+    /*color: #000;*/
+}
+#itemPanel_7 .childContainer .topContainer{
+    text-align: center;
+    width:100%;
+}
+#itemPanel_7 .childContainer .topContainer p:first-child{
+    font-size:21px;
+    font-family:黑体;
+    margin-bottom:0;
+
+}
+#itemPanel_7 .childContainer .topContainer hr{
+    width:30px;
+    border-color: rgb(230,78,80);
+    background-color: rgb(230,78,80);
+    color: rgb(230, 78, 80);
+    margin-bottom:10px;
+}
+#itemPanel_7 .childContainer .topContainer p:last-child{
+    font-size:12px;
+    font-family:微软雅黑;
+    color: #aaaaaa;
+    width:33%;
+    margin:0 auto;
+}
+#itemPanel_7 .childContainer .bottomContainer{
+    width:80%;
+    margin:0 auto;
+    margin-top:50px;
+}
+#itemPanel_7 .childContainer .bottomContainer .leftContainer{
+    width:30%;
+    height:337px;
+    float: left;
+}
+#itemPanel_7 .childContainer .bottomContainer .rightContainer{
+    width:65%;
+    float: right;
+    /*margin-left:;*/
+}
+#itemPanel_7 .childContainer .bottomContainer .leftContainer .textDiv {
+    margin-top:45.6px;
+}
+#itemPanel_7 .childContainer .bottomContainer .leftContainer div p:first-child{
+
+    font-size:14px;
+    font-family:黑体;
+}
+#itemPanel_7 .childContainer .bottomContainer .leftContainer div .middleText{
+    color: #aaaaaa;
+    font-size:12px;
+    font-family:宋体;
+}
+#itemPanel_7 .childContainer .bottomContainer .leftContainer div p:last-child{
+    font-size:10px;
+    color: #aaaaaa;
+    text-align: right;
+}
+
+#itemPanel_7 .childContainer .bottomContainer .rightContainer .leftChild,#itemPanel_7 .childContainer .bottomContainer .rightContainer .rightChild{
+    width:48%;
+    /*height:311px;*/
+}
+#itemPanel_7 .childContainer .bottomContainer .rightContainer .leftChild input,#itemPanel_7 .childContainer .bottomContainer .rightContainer .rightChild input{
+    width:100%;
+    height:40px;
+}
+#itemPanel_7 .childContainer .bottomContainer .rightContainer .leftChild{
+    float: left;
+}
+#itemPanel_7 .childContainer .bottomContainer .rightContainer .rightChild{
+    float: right;
+}
+#itemPanel_7 .childContainer .bottomContainer .rightContainer div div input,#itemPanel_7 .childContainer .rightContainer div .textArea,#itemPanel_7 .childContainer .rightContainer div input:last-child{
+    border:0 ;
+    background-color: rgb(237,237,237);
+    /*padding-left:10px;*/
+    margin-bottom:20px;
+}
+/*#itemPanel_7 .childContainer .rightContainer div div input{*/
+    /*width:48%;*/
+    /*height:40px;*/
+
+/*}*/
+/*#itemPanel_7 .childContainer .rightContainer div div:last-child input {*/
+    /*!*float: right;*!*/
+    /*position: relative;*/
+    /*right:0;*/
+/*}*/
+
+#itemPanel_7 .childContainer .bottomContainer .rightContainer div .textArea{
+    width:100%;
+    height:120px;
+    padding:0;
+    padding-top:10px;
+}
+#itemPanel_7 .childContainer .bottomContainer .rightContainer div input[type='submit']{
+    width:100%;
+    height:40px;
+    font-family:微软雅黑;
+    font-weight:bold;
+}
