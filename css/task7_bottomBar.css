@@ -1,0 +1,33 @@
+#bottomBar{
+    width:100%;
+    height:55px;
+    background-color: rgb(47,47,56);
+}
+#bottomBar div{
+    background-color: transparent;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+#bottomBar div p{
+    color: #FFFFFF;
+    font-size:15px;
+    height:55px;
+    position: relative;
+
+}
+#bottomBar div p:first-child{
+    width:10%;
+    float: left;
+    margin-left:40px;
+}
+#bottomBar div p:last-child{
+    width:10%;
+    float: right;
+    text-align: right;
+    margin-right:40px;
+}
+#bottomBar div p a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
