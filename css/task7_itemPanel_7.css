@@ -1,6 +1,7 @@
 #itemPanel_7{
     width:100%;
     overflow: hidden;
+    padding-bottom:30px;
 }
 #itemPanel_7 .childContainer{
     width:100%;

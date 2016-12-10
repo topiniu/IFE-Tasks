@@ -1,0 +1,63 @@
+#itemPanel_8,#itemPanel_8 .container{
+    width:100%;
+    height:358px;
+}
+#itemPanel_8 .container{
+    background-color: rgb(50,54,62);
+    position: absolute;
+}
+#itemPanel_8 .container .childContainer{
+    position: relative;
+    height:207px;
+    width:511px;
+    text-align: center;
+    top:50%;
+    background-color: transparent;
+    margin:0 auto;
+    margin-top:-103.5px;
+
+}
+#itemPanel_8 .container .childContainer .topTextContainer{
+    color: #FFFFFF;
+    font-family:微软雅黑;
+}
+#itemPanel_8 .container .childContainer .topTextContainer p:first-child{
+    font-size:21px;
+    margin:0;
+    margin-bottom:10px;
+}
+#itemPanel_8 .container .childContainer .topTextContainer p:last-child{
+    font-size:12px;
+    margin-top:0;
+    width:96%;
+    margin:0 auto;
+}
+#itemPanel_8 .container .childContainer .midFormContainer{
+    margin-top:30px;
+}
+#itemPanel_8 .container .childContainer .midFormContainer form input:first-child{
+    height:36px;
+    width:432px;
+    border:1px solid #aaaaaa;
+    float: left;
+    border-right:0;
+}
+#itemPanel_8 .container .childContainer .midFormContainer form input:last-child{
+    height:40px;
+    width:78px;
+    font-size:15px;
+    font-family:微软雅黑;
+    border:1px solid #aaaaaa;
+    border-left:0;
+}
+#itemPanel_8 .container .childContainer .botImgContainer{
+    margin-top:40px;
+}
+#itemPanel_8 .container .childContainer .botImgContainer img{
+    width:25px;
+    height:25px;
+}
+
+#itemPanel_8 .container .childContainer .botImgContainer .img{
+    margin-right:15px;
+}
