@@ -1,4 +1,5 @@
 [class*='col-md-']{
+    margin: 0 10px;
     border:1px solid #999;
     background-color: #eee;
     height:50px;
@@ -6,42 +7,36 @@
     float: left;
     text-align: center;
 }
+.outline,.outline *{
+    /*outline:1px solid deepskyblue;*/
+}
 .container .row{
     clear: both;
 }
-.container .row .col-md-1{
-    width:8%;
-}
-.container .row .col-md-2{
-    width:16%;
-}
-.container .row .col-md-3{
-    width:24%;
-}
-.container .row .col-md-4{
-    width:32%;
-}
-.container .row .col-md-5{
-    width:40%;
-}
-.container .row .col-md-6{
-    width:48%;
-}
-.container .row .col-md-7{
-    width:56%;
-}
-.container .row .col-md-8{
-    width:64%;
-}
-.container .row .col-md-9{
-    width:72%;
-}
-.container .row .col-md-10{
-    width:80%;
-}
-.container .row .col-md-11{
-    width:88%;
-}
-.container .row .col-md-12{
-    width:96%;
+.container .row .col-md-1{ width:8.33%;}
+.container .row .col-md-2{ width:13.78%;}
+.container .row .col-md-3{ width:23.26%;}
+.container .row .col-md-4{ width:32.178%;}
+.container .row .col-md-5{ width:38.2%;}
+.container .row .col-md-6{ width:50%;}
+.container .row .col-md-7{ width:59.49%;}
+.container .row .col-md-8{ width:65.512%;}
+.container .row .col-md-9{ width:70.39%;}
+.container .row .col-md-10{ width:79.87%;}
+.container .row .col-md-11{ width:89.36%;}
+.container .row .col-md-12{ width:100%;}
+
+@media all and (max-width: 768px){
+    .container .row .col-md-1{ width:50%;}
+    .container .row .col-md-2{ width:100%;}
+    .container .row .col-md-3{ width:100%;}
+    .container .row .col-md-4{ width:100%;}
+    .container .row .col-md-5{ width:100%;}
+    .container .row .col-md-6{ width:100%;}
+    .container .row .col-md-7{ width:100%;}
+    .container .row .col-md-8{ width:100%;}
+    .container .row .col-md-9{ width:100%;}
+    .container .row .col-md-10{ width:100%;}
+    .container .row .col-md-11{ width:100%;}
+    .container .row .col-md-12{ width:100%;}
 }
