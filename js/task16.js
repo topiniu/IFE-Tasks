@@ -16,14 +16,20 @@ var aqiData = {};
  * 然后渲染aqi-list列表，增加新增的数据
  */
 function addAqiData() {
+    var city = document.getElementById("aqi-city-input").innerHTML;
+    var value = document.getElementById("aqi-value-input").innerHTML;
 
+    aqiData.push(city,value);
 }
 
 /**
  * 渲染aqi-table表格
  */
 function renderAqiList() {
+    var item = aqiData[aqiData.length-1];
+    var tr = '<tr><td>' + item[0] + '</td><td>' + item[1] + '</td><td><button>删除</button></td></tr>';
 
+    document.getElementById("aqi-table").appendChild(tr);
 }
 
 /**
@@ -31,6 +37,7 @@ function renderAqiList() {
  * 获取用户输入，更新数据，并进行页面呈现的更新
  */
 function addBtnHandle() {
+    alert(0);
     addAqiData();
     renderAqiList();
 }
@@ -49,6 +56,8 @@ function init() {
 
     // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
 
+    var btn = document.getElementById('add-btn');
+    btn.onclick = addBtnHandle;
     // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
 
 }
