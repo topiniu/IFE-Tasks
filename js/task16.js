@@ -9,17 +9,18 @@
  *    "上海": 40
  * };
  */
-var aqiData = {};
+var aqiData = [];
 
 /**
  * 从用户输入中获取数据，向aqiData中增加一条数据
  * 然后渲染aqi-list列表，增加新增的数据
  */
 function addAqiData() {
-    var city = document.getElementById("aqi-city-input").innerHTML;
-    var value = document.getElementById("aqi-value-input").innerHTML;
-
-    aqiData.push(city,value);
+    var city = document.getElementById("aqi-city-input");
+    city = city.value
+    var value = document.getElementById("aqi-value-input");
+    value = value.value
+    aqiData.push([city,value]);
 }
 
 /**
@@ -27,7 +28,10 @@ function addAqiData() {
  */
 function renderAqiList() {
     var item = aqiData[aqiData.length-1];
-    var tr = '<tr><td>' + item[0] + '</td><td>' + item[1] + '</td><td><button>删除</button></td></tr>';
+    alert(item[1]);
+    var tr = document.createElement("tr");
+
+    tr.innerHTML = '<td>' + item[0] + '</td><td>' + item[1] + '</td><td><button>删除</button></td>';
 
     document.getElementById("aqi-table").appendChild(tr);
 }
