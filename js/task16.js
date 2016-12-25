@@ -46,8 +46,21 @@ function renderAqiList() {
  * 获取用户输入，更新数据，并进行页面呈现的更新
  */
 function addBtnHandle() {
-    addAqiData();
-    renderAqiList();
+    var city = document.getElementById("aqi-city-input");
+    cit = city.value
+    var value = document.getElementById("aqi-value-input");
+    valu = value.value
+    var rd = /[^\u4E00-\u9FA5|a-z]/ig;//是否含有非中文英文字符的字符
+    var re = /\.|\D/g;//是否含有.
+    if (re.test(valu)||rd.test(cit)) {
+        alert("wrong input");
+
+    } else {
+        addAqiData();
+        renderAqiList();
+    }
+    city.value = "";
+    value.value = "";
 }
 
 /**
