@@ -58,7 +58,40 @@ var pageState = {
  * 渲染图表
  */
 function renderChart() {
+    var time = pageState.nowGraTime;
+    var colors = ['blue','red','green'];
+    var i=0;
+    var divContainer = document.getElementsByClassName('aqi-chart-wrap')[0];
+    divContainer.innerHTML = '';
+    var flag=0;
+    var width=0;
+    if (time === 'day') {
+       width=8;
+    }else if(time==='week'){
+        width=16;
+    }else{
+        width=24;
+    }
 
+    for (x in chartData) {
+        flag+=width;
+        var div = document.createElement('div');
+        div.style.height = chartData[x];
+        div.setAttribute('title',x + '--' + chartData[x]);
+        div.style.backgroundColor = colors[i];
+        if(i===2)
+            i=0;
+        else
+            i++;
+
+        div.style.position = 'absolute';
+        div.style.bottom = '0px';
+        div.style.left = flag + 'px';
+        div.style.width = width + 'px';
+        div.style.float = 'left';
+
+        divContainer.appendChild(div);
+    }
 }
 
 /**
@@ -79,7 +112,8 @@ function graTimeChange() {
     // 设置对应数据
     pageState.nowGraTime = t;
     // 调用图表渲染函数
-    initAqiChartData
+    initAqiChartData();
+    renderChart();
 
 }
 
@@ -91,12 +125,13 @@ function citySelectChange() {
     var sc = pageState.nowSelectCity;
     var se = document.getElementById('city-select');
     var index = se.selectedIndex;
-    if(sc===index)
+    if(sc==index)
         return;
     // 设置对应数据
     pageState.nowSelectCity = index;
     // 调用图表渲染函数
     initAqiChartData();
+    renderChart();
 }
 
 /**
@@ -130,25 +165,27 @@ function initCitySelector() {
 
     // 给select设置事件，当选项发生变化时调用函数citySelectChange
     se.onchange = citySelectChange;
-
+    pageState.nowSelectCity = 0;
 }
 
 /**
  * 初始化图表需要的数据格式
  */
 function initAqiChartData() {
+    chartData = {};//置空
     // 将原始的源数据处理成图表需要的数据格式
     var cityIndex = pageState.nowSelectCity;
     var time = pageState.nowGraTime;
     var i=0;
     var cityNums;
     for(x in aqiSourceData){
-       if(i<cityIndex)
-           continue;
-       else
+       if(i==cityIndex) {
            cityNums = aqiSourceData[x];
+           i=0;
+       }
+       else
+           i++;
     }
-
 
     // 处理好的数据存到 chartData 中
     if(time==='day'){
@@ -157,14 +194,31 @@ function initAqiChartData() {
         }
 
     }else if(time==='week'){
-        var i=0;
+        var i=1;
         var total=0;
-        var value=0;
         for(x in cityNums){
-
+            total += cityNums[x];
+            i++;
+            if(i%7 === 0){
+                var weekNum = i/7;
+                var week = '第'+weekNum+'周';
+                chartData[week] = total/7;
+                total=0;
+            }
         }
     }else{
-
+        var total=0;
+        var mouth=0;
+        var day=0;
+        for(x in cityNums){
+            mouth = x.slice(5,7);//2016-01-01
+            day = x.slice(8);
+            total+=cityNums[x];
+            if((mouth==02 && day==29)||day==31){
+                chartData[mouth+'月'] = total/day;
+                total=0;
+            }
+        }
     }
 }
 
@@ -175,6 +229,7 @@ function init() {
     initGraTimeForm()
     initCitySelector();
     initAqiChartData();
+    renderChart();
 }
 
 init();
