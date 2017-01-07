@@ -1,21 +1,29 @@
 /**
  * Created by Administrator on 2017/1/6 0006.
  */
+
+function test() {
+    for(var i=0;i<60;i++){
+        var m = Math.random() * 90 + 10;
+        createDiv(0,m);
+    }
+}
 var flag = 0;
-function createDiv(i){
+function createDiv(i,m){
     var inputBox = document.getElementById('inputBox');
     var contentBox = document.getElementById('contentBox');
-    if(!val()){
-        alert('wrong input');
-        inputBox.value = '';
-        return;
-    }else if(contentBox.childNodes.length>60){
-        alert('stack full');
-        return;
-    }
+    // if(!val()){
+    //     alert('wrong input');
+    //     inputBox.value = '';
+    //     return;
+    // }else if(contentBox.childNodes.length>60){
+    //     alert('stack full');
+    //     return;
+    // }
 
     flag+=1;
-    var value = inputBox.value;
+    // var value = inputBox.value;
+    var value = m;
     var mt = 200 - value;
     var div = document.createElement('div');
     // div.innerHTML = value;
@@ -28,6 +36,7 @@ function createDiv(i){
     div.style.width = '20px';
     div.style.height = value + 'px';
     div.style.marginRight = '2px';
+    div.style.transition = 'height 2s,margin-top 2s';
     // div.style.textAlign = 'center';
     div.setAttribute('onclick','delItem(this)');
     if(i===0)
@@ -48,14 +57,10 @@ function sort(){
             if(mnode.style.height > snode.style.height){
                 changePosition(mnode,snode);
             }
-            setTimeout(function () {
                 snode.style.backgroundColor = 'red';
-            },2000);
 
         }
-        setTimeout(function () {
             mnode.style.backgroundColor = 'red';
-        },2000);
     }
 }
 function changePosition(i,j){
@@ -116,3 +121,4 @@ function init() {
 }
 
 init();
+test();
